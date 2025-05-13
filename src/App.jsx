@@ -1,5 +1,4 @@
-import { AppContainer } from "./components";
-import { ExchangeInterface } from "./components";
+import { AppContainer, ExchangeInterface } from "./components/Index";
 
 function App() {
   return (
