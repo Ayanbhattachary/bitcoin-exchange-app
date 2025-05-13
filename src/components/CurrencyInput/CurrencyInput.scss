@@ -1,4 +1,4 @@
-@import "../../styles/main.scss";
+@use "../../styles/index" as *;
 
 .currency-input {
   display: flex;

@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use '../../styles/index' as *;
 
 .exchange-rate {
   margin: $space-md 0;
@@ -11,7 +11,7 @@
     gap: 5px;
     align-items: center;
     font-size: $font-size-sm;
-    color: $color-grey-500; // gray-600
+    color: $color-grey-500;
   }
 
   &__label {

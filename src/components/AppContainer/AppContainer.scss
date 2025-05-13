@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/index" as *;
 
 .app-container {
   width: 100%;

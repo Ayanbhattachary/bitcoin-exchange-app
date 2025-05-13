@@ -1,4 +1,4 @@
-@import "../../styles/main.scss";
+@use "../../styles/index" as *;
 
 .toggle-wrapper {
   border-radius: 1rem;
