@@ -10,8 +10,8 @@ Make sure you have the following installed:
 
 ## Clone the Repository
 
-1. git clone https://github.com/your-username/your-repo-name.git
-2. cd your-repo-name
+1. git clone [https://github.com/your-username/your-repo-name.git](https://github.com/Ayanbhattachary/bitcoin-exchange-app.git)
+2. cd bitcoin-exchange-app
 
 ## Install Dependencies
 
