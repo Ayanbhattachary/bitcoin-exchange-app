@@ -1,0 +1,42 @@
+@import '../../styles/main.scss';
+
+.exchange-rate {
+  margin: $space-md 0;
+  border: 1px solid $color-border;
+  padding: $space-md;
+  border-radius: 0.5rem;
+
+  &__header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: $font-size-sm;
+    color: $color-grey-500; // gray-600
+  }
+
+  &__label {
+    gap: $space-sm;
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-lg;
+    margin-top: $space-md;
+  }
+
+  &__value {
+    font-size: $font-size-base;
+    font-weight: 600;
+    color: $color-grey-900;
+  }
+
+  &__divider-icon {
+    color: $color-grey-500;
+  }
+}

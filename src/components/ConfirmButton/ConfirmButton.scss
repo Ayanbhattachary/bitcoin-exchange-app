@@ -1,0 +1,51 @@
+@import "../../styles/main.scss";
+
+.confirm-button {
+    width: 100%;
+    padding: $space-md $space-lm;
+    border-radius: 0.5rem;
+    color: $color-text-light;
+    font-weight: 500;
+    font-size: $font-size-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  
+    &:hover {
+      opacity: 80%;
+    }
+  
+    &--success {
+      background-color: $color-success;
+    }
+
+    &--danger {
+      background-color: $color-danger;
+    }
+  
+    &--disabled {
+      background-color: $color-disabled-bg; // gray-400
+      cursor: not-allowed;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  
+    &__icon {
+      margin-right: $space-sm;
+  
+      &--spin {
+        animation: spin 1s linear infinite;
+      }
+    }
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

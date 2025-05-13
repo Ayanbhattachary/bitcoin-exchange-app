@@ -1,0 +1,90 @@
+@import "../../styles/main.scss";
+
+.success-message {
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color-white, 0.95);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    border-radius: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+  
+    &__content {
+      background: $color-white;
+      text-align: center;
+      padding: $space-lg;
+      border-radius: 0.75rem;
+    }
+  
+    &__icon {
+      color: $color-green-600;
+      margin: 0 auto $space-md;
+    }
+  
+    &__title {
+      font-size: $font-size-lg;
+      font-weight: 700;
+      color: $color-grey-800;
+      margin-bottom: $space-sm;
+    }
+  
+    &__description {
+      color: $color-grey-600;
+      margin-bottom: $space-md;
+    }
+  
+    &__summary {
+      background-color: $color-grey-100;
+      padding: $space-md;
+      border-radius: 0.5rem;
+      margin-bottom: $space-lg;
+  
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $space-sm;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    &__label {
+      color: #4b5563;
+    }
+  
+    &__value {
+      font-weight: 600;
+    }
+  
+    &__button {
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      background-color: $color-success;
+      color: white;
+      font-weight: 500;
+      border: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.2s ease;
+  
+      &:hover {
+        background-color: rgba($color-success, 75%)
+      }
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

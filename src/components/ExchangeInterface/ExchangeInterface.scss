@@ -1,0 +1,46 @@
+@import '../../styles/main.scss';
+
+.card {
+  width: 100%;
+  max-width: 468px;
+  flex: 1;
+  justify-content: center;
+  padding: $space-md;
+  border: none;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  @media only screen and (min-width: $breakpoint-lg) {
+    border-radius: 1rem;
+    border: 1px solid $color-border;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    flex: none;
+    justify-content: flex-start;
+  }
+
+  &__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: $font-size-lg;
+  }
+
+  &__body{
+    flex: 1;
+
+    @media only screen and (min-width: $breakpoint-lg) {
+      flex: none;
+    }
+  }
+
+  &__footer{
+    align-content: flex-end;
+  }
+
+}
+

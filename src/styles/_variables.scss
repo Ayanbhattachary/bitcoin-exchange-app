@@ -1,0 +1,62 @@
+// Colors
+$color-primary: #0d6efd;
+$color-secondary: #6c757d;
+$color-accent: #ffc107;
+$color-bg: #ffffff;
+$color-dark: #212529;
+$color-muted: #6c757d;
+$color-border: #e5e7eb;
+$color-text-dark: #000000;
+$color-text-light: #ffffff;
+
+// Base Colors
+$color-green-500: #12b76a;
+$color-green-100: #f1fdf6;
+$color-green-600: #16a34a;
+
+$color-red-500: #f04438;
+$color-red-100: #fff5f5;
+
+$color-grey-100: #f3f4f6;
+$color-grey-500: #6b7280;
+$color-grey-600: #4b5563;
+$color-grey-800: #1f2937;
+$color-grey-900: #111827;
+
+$color-white: #ffffff;
+
+
+
+// Semantic Aliases
+$color-success: $color-green-500;
+$color-success-bg: $color-green-100;
+$color-danger: $color-red-500;
+$color-danger-bg: $color-red-100;
+$color-disabled-bg: #9ca3af;
+$input-border: #ccc;
+$input-border-focus: #2563eb;
+
+
+
+// Typography
+$font-family-base: 'Poppins', sans-serif;
+$font-size-heading: 2rem;
+$font-size-lg: 1.5rem;
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.5rem;
+
+
+// Spacing
+$space-xs: 0.25rem;
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lm: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 4rem;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

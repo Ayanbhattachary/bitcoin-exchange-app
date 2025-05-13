@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'reset';
+@import 'mixin';
+
+// ✅ Import Poppins from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+.m-t-10 {
+  margin-top: 0.625rem;
+}
+
+.m-b-10 {
+  margin-bottom: 0.625rem;
+}
+
+.m-l-auto {
+  margin-left: auto;
+}
+
+.m-r-auto {
+  margin-right: auto;
+}
+
+.m-t-auto {
+  margin-top: auto;
+}
+
+.m-b-auto {
+  margin-bottom: auto;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  .flex-1-sm {
+    flex: 1;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../styles/main.scss";
+
+.toggle-wrapper {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-button {
+  display: flex;
+  padding: $space-sm;
+  transition: background-color 0.3s ease;
+
+  &--buy .toggle-button__container {
+    background-color: $color-success-bg; // Light green bg for Buy
+  }
+
+  &--sell .toggle-button__container {
+    background-color: $color-danger-bg; // Light red bg for Sell
+  }
+
+  &__container {
+    display: flex;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+
+  &__option {
+    flex: 1;
+    padding: 0.6rem 1.5rem;
+    font-size: $font-size-sm;
+    border: none;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: $color-text-dark;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+
+    &--active {
+      color: $color-text-light;
+
+      .toggle-button--buy & {
+        background-color: $color-success;
+      }
+
+      .toggle-button--sell & {
+        background-color: $color-danger;
+      }
+    }
+  }
+}

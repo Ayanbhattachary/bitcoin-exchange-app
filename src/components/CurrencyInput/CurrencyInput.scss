@@ -1,0 +1,48 @@
+@import "../../styles/main.scss";
+
+.currency-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__label {
+    font-weight: 500;
+    font-size: $font-size-sm;
+    color: $color-grey-500;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.75rem 3.5rem 0.75rem 1rem; // leave space for suffix
+    font-size: $font-size-base;
+    border: 1px solid $input-border;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    transition: all 0.25s ease-in-out;
+    outline: none;
+
+    &:focus {
+      border: 1px solid $input-border-focus;
+    }
+
+    &:disabled {
+      background-color: whitesmoke;
+      cursor: not-allowed;
+    }
+  }
+
+  &__suffix {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: #555;
+    pointer-events: none;
+  }
+}
