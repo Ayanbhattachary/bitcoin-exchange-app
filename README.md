@@ -59,4 +59,4 @@ I followed BEM for class naming to keep styles modular and readable.
 ## Code Reusability
 
 - Currency conversion logic is centralized in a utility function (`utils/currency.js`) and is built to support additional currencies in the future with some further tweaks.
-- Created a ('hooks/') folder to keep API logic separate from UI. This makes the code cleaner, more reusable, and easier to manage.
+- Created a (`hooks/`) folder to keep API logic separate from UI. This makes the code cleaner, more reusable, and easier to manage.
