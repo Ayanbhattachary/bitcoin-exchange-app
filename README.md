@@ -33,8 +33,8 @@ Make sure you have the following installed:
 This app allows users to:
 
 - Swap between BTC and USD (buy/sell)
-- View real-time exchange rate (can be static or from API)
-- Input amount in one currency and auto-calculate the other
+- View real-time exchange rate (Used an opensource APi for now)
+- Input the amount in one currency and auto-calculate the other
 - Confirm transactions with success feedback
 
 ## Component Structure
@@ -58,5 +58,5 @@ I followed BEM for class naming to keep styles modular and readable.
 
 ## Code Reusability
 
-- Currency conversion logic is centralized in a utility function (`utils/currency.js`) and is built to support additional currencies in the future with some additional tweeks.
-- Created a hooks/ folder to keep API logic separate from UI. This makes the code cleaner, more reusable, and easier to manage.
+- Currency conversion logic is centralized in a utility function (`utils/currency.js`) and is built to support additional currencies in the future with some further tweaks.
+- Created a ('hooks/') folder to keep API logic separate from UI. This makes the code cleaner, more reusable, and easier to manage.
