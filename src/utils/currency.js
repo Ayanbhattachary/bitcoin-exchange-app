@@ -26,8 +26,8 @@ export const formatCurrencyAmount = (amount, currency) => {
 };
 
 const currencyValidInputRegex = {
-  BTC: /^\d*\.?\d{0,8}$/,
-  USD: /^\d*\.?\d{0,2}$/,
+  BTC: /^\d{0,10}(\.\d{0,8})?$/,
+  USD: /^\d{0,10}(\.\d{0,8})?$/,
 };
 
 export const validateCurrencyInput = (input, currency) => {
@@ -44,7 +44,7 @@ export const convertCurrency = (amount, fromCurrency, toCurrency, rate) => {
 
   // BTC to USD
   if (fromCurrency === "BTC" && toCurrency === "USD") {
-    return (numAmount * rate).toFixed(2);
+    return (numAmount * rate).toFixed(8);
   }
 
   // USD to BTC

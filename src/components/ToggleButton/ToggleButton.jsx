@@ -7,6 +7,7 @@ export const ToggleButton = ({ exchangeType, setExchangeType }) => {
       <div className={`toggle-button toggle-button--${exchangeType}`}>
         <div className="toggle-button__container">
           <button
+            disabled={exchangeType === "buy" ? true : false}
             className={`toggle-button__option ${
               exchangeType === "buy" ? "toggle-button__option--active" : ""
             }`}
@@ -15,6 +16,7 @@ export const ToggleButton = ({ exchangeType, setExchangeType }) => {
             Buy
           </button>
           <button
+            disabled={exchangeType === "sell" ? true : false}
             className={`toggle-button__option ${
               exchangeType === "sell" ? "toggle-button__option--active" : ""
             }`}
